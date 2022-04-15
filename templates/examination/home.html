@@ -1,0 +1,16 @@
+{% extends "examination/base.html" %}
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+  <h1>Home</h1>
+  {% if AcademicYears %}
+    {% for i in AcademicYears %}
+    <button type="button" name="AYs"> {{i.name}} </button>
+
+    {% endfor %}
+  {% else %}
+
+  {% endif %}
+{% endblock %}
